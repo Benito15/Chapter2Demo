@@ -1,10 +1,5 @@
 package ac.za.cput;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Set;
-
 public class Person implements Info {
 
     private String name;
@@ -41,11 +36,12 @@ public class Person implements Info {
         System.out.println(getAmount());
     }
 
-    public void greet()
+    public String greet()
     {
 
         System.out.println("Hello there!!");
 
+        return null;
     }
 
     @Override

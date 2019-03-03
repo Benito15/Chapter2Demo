@@ -3,15 +3,18 @@ package ac.za.cput;
 import javax.swing.*;
 import java.util.*;
 
-/**
- * Hello world!
- *
- */
+
 public class App 
 {
+    Person personObject= new Person("Lorenzo", 50);
+    Person personObject1= new Person("Connie", 1200);
+    Person personObject2= new Person("Robyn", 200);
+
+    /*
     public static void main( String[] args )
 
     {
+
 
         Person personObject= new Person("Lorenzo", 50);
         Person personObject1= new Person("Connie", 1200);
@@ -48,9 +51,46 @@ public class App
         System.out.println("Coding to interface>>>>>>>");
         personObject.showInfo();
         personObject.greet();
+*/
 
+   public Collection<String> collectionStyle()
+   {
+       Collection<String> subjects = new ArrayList<>();
+       ((ArrayList<String>) subjects).add("Application Development Practice");
+       ((ArrayList<String>) subjects).add("Project presentation");
+       ((ArrayList<String>) subjects).add("Information Systems");
 
+       return subjects;
 
+   }
 
+    public Set<String> setStyle()
+    {
+        Set<String> setSubjects = new LinkedHashSet<>();
+
+        setSubjects.add("Application Development Practice");
+        setSubjects.add("Project presentation");
+        setSubjects.add("Information Systems");
+        return setSubjects;
     }
+
+  /*  Map <Person, Integer> map = new LinkedHashMap<Person, Integer>();
+        map.put(personObject,1);
+        map.put(personObject1,2);
+        map.put(personObject2,3);*/
+
+  public Map<Person, Integer> mapStyle()
+  {
+
+      Map map = new LinkedHashMap<Person, Integer>();
+      map.put(personObject,1);
+      map.put(personObject1,2);
+      map.put(personObject2,3);
+
+      return map;
+
+
+  }
+
+
 }

@@ -4,6 +4,6 @@ public interface Info {
 
 
     void showInfo();
-   void greet();
+   String greet();
 
 }
