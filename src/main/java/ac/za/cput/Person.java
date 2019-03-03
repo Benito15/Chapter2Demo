@@ -29,11 +29,11 @@ public class Person implements Info {
         this.amount = amount;
     }
 
-    public void showInfo()
+    public String showInfo()
     {
 
-        System.out.println(getName());
-        System.out.println(getAmount());
+
+        return (getName() + getAmount());
     }
 
     public String greet()

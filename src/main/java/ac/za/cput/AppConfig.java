@@ -1,6 +1,8 @@
 package ac.za.cput;
 
 import javax.management.MXBean;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AppConfig {
@@ -11,7 +13,7 @@ public class AppConfig {
                 return new Person();
 
             }
-    @Bean( name = "superHeroe")
+    @Bean( name = "superHeroes")
     public Info getSuperHeroeInformation()
     {
         return new SuperHero();
