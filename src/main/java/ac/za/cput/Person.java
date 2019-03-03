@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 
-public class Person {
+public class Person implements Info {
 
     private String name;
     private int amount;
@@ -32,6 +32,20 @@ public class Person {
 
     public void setAmount(int amount) {
         this.amount = amount;
+    }
+
+    public void showInfo()
+    {
+
+        System.out.println(getName());
+        System.out.println(getAmount());
+    }
+
+    public void greet()
+    {
+
+        System.out.println("Hello there!!");
+
     }
 
     @Override

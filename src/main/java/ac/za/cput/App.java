@@ -1,5 +1,6 @@
 package ac.za.cput;
 
+import javax.swing.*;
 import java.util.*;
 
 /**
@@ -43,5 +44,13 @@ public class App
 
         System.out.println(set);
         System.out.println("--------------------------------------");
+
+        System.out.println("Coding to interface>>>>>>>");
+        personObject.showInfo();
+        personObject.greet();
+
+
+
+
     }
 }
